@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PetitaBold.ttf">
+            <string>PetitaBold</string>
+            <string>PetitaBold</string>
+            <string>PetitaBold</string>
+        </mutableArray>
+        <mutableArray key="PetitaMedium.ttf">
+            <string>PetitaMedium</string>
+            <string>PetitaMedium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoodsSubViewController" customModule="Aura" customModuleProvider="target">
+            <connections>
+                <outlet property="btnChangeMood" destination="V44-Kh-XMJ" id="cg7-jw-xC2"/>
+                <outlet property="btnScore" destination="gjW-b9-Lou" id="FKz-0V-VLl"/>
+                <outlet property="btnShareMood" destination="s3e-KO-aXc" id="AzF-DJ-weo"/>
+                <outlet property="lblFeelTitle" destination="xBJ-lM-sLX" id="mKh-B7-SVF"/>
+                <outlet property="lblFeeling" destination="yev-ab-UEt" id="L2k-fK-jQL"/>
+                <outlet property="moodBg" destination="yyR-rr-ZZx" id="ds1-wP-yal"/>
+                <outlet property="scrlView" destination="uek-BZ-yno" id="lNo-uL-6NA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uek-BZ-yno">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yyR-rr-ZZx">
+                            <rect key="frame" x="0.0" y="109" width="320" height="408"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I AM FEELING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xBJ-lM-sLX">
+                            <rect key="frame" x="51" y="125" width="218" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PetitaMedium" family="PetitaMedium" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suicidal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yev-ab-UEt">
+                            <rect key="frame" x="0.0" y="166" width="320" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PetitaBold" family="PetitaBold" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gjW-b9-Lou">
+                            <rect key="frame" x="173" y="14" width="87" height="87"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PetitaMedium" family="PetitaMedium" pointSize="25"/>
+                            <inset key="titleEdgeInsets" minX="-90" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="feelingCircle.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="detailOfMood:" destination="-1" eventType="touchUpInside" id="UB3-UD-FbD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V44-Kh-XMJ">
+                            <rect key="frame" x="39" y="402" width="241" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Change Mood">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeMoodTapped:" destination="-1" eventType="touchUpInside" id="XMj-Ff-9ke"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tTt-ng-p7U">
+                            <rect key="frame" x="39" y="224" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="9" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Songs" image="musicIcon.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="rpD-2R-y4i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jaV-vM-uZT">
+                            <rect key="frame" x="39" y="315" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Videos" image="video.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="VRz-FQ-gBd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8l4-6m-QIH">
+                            <rect key="frame" x="130" y="224" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="13" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Photos" image="picture.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="rTo-Ot-3WR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nio-b3-sdB">
+                            <rect key="frame" x="218" y="224" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="13" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Quotes" image="QuotesIcon.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="F9a-ub-Qvq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lOg-rp-3fj">
+                            <rect key="frame" x="218" y="315" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-29" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="11" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Tips" image="tips.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="BhX-9T-oF5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zQ8-5F-clt">
+                            <rect key="frame" x="130" y="315" width="60" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="7" maxX="4" maxY="-34"/>
+                            <inset key="imageEdgeInsets" minX="11" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Jokes" image="jokeIcon.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="ubL-4P-gj4"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P3y-iQ-pAP">
+                            <rect key="frame" x="272" y="41" width="19" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" image="set.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="detailOfMood:" destination="-1" eventType="touchUpInside" id="avS-u0-SJW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Happiness " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hXt-pZ-ImZ">
+                            <rect key="frame" x="35" y="26" width="119" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PetitaBold" family="PetitaBold" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zb5-dQ-snR">
+                            <rect key="frame" x="39" y="46" width="111" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PetitaBold" family="PetitaBold" pointSize="28"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s3e-KO-aXc">
+                            <rect key="frame" x="39" y="454" width="241" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.34509803919999998" green="0.71372549019999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Share Mood">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareMoodTapped:" destination="-1" eventType="touchUpInside" id="N0a-0M-GBd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="357" y="293"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="QuotesIcon.png" width="34" height="23"/>
+        <image name="feelingCircle.png" width="87" height="87"/>
+        <image name="jokeIcon.png" width="31" height="31"/>
+        <image name="musicIcon.png" width="28" height="32"/>
+        <image name="picture.png" width="31" height="26"/>
+        <image name="set.png" width="19" height="19"/>
+        <image name="tips.png" width="25" height="38"/>
+        <image name="video.png" width="37" height="28"/>
+    </resources>
+</document>
